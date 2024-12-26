@@ -1,6 +1,7 @@
 package DSA;
 
 public class AgnosticSearch {
+    // When the order of array is not defined (whether ascending or descending
     public static void main(String[] args) {
         int[] arr = {100,23,11,2,-10};
         int target = 2;
