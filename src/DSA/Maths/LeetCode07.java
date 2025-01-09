@@ -1,4 +1,12 @@
-        double sum = 0;
+package Maths;
+
+public class LeetCode07 {
+    public static void main(String[] args) {
+        System.out.println(reverse(100));
+    }
+
+    public static int reverse(int x) {
+double sum = 0;
         boolean b = x<0;
         if(b){
             x = x* -1;
@@ -17,3 +25,5 @@
             return (int)-sum;
         }
         return (int)sum;
+    }
+}
