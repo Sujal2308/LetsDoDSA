@@ -6,19 +6,21 @@ public class LeetCode258 {
 
     }
     static int addDigits(int num) {
-    String str = ""+num;
-    if(str.length()==1){
-        return num;
-    }
-    int add = 0;
-    while(str.length()>1){
-        add = 0;
-        for(int i = 0 ; i<str.length();i++){
-          add = add + Character.getNumericValue(str.charAt(i));
+ if(num<10){
+            return num;
         }
-        str = ""+add;
+        int sum;
+        int val;
+     while(num>=10){
+         sum = 0;
+         while(num>0){
+             val = num % 10;
+             sum = sum + val;
+             num = num/10;
+         }
+         num = sum;
 
-    }
-    return add;
+     }
+     return num;
     }
 }
